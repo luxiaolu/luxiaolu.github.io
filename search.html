@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>搜索商品</title>
+<meta name="keywords" content="桔子分期,分期,分期网,手机分期,笔记本分期,相机分期,分期付款,兼职">
+<meta name="description" content="桔子分期是一家专注于年轻人分期购物的在线商城及金融服务平台，所有商品100%正品行货,支持全网分期,产品以限时特卖、零首付分期付款为主，是国内领先的年轻人分期消费服务商。">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="email=no"/>
+<meta name="format-detection" content="address=no"/>
+<meta name="format-detection" content="telephone=no">
+<meta name="copyright" content="Copyright (c) juzifenqi.com">
+<link rel="stylesheet" href="static/css/h5.reset.css?v=47641" />
+<link rel="stylesheet" href="static/css/product.css?v=2339062" />
+</head>
+<body>
+    <header class="header">
+        <div class="search-form"><i class="i-search"></i><input type="text" class="search-input" placeholder="请输入宝贝关键字"></div>
+        <a href="javascript:;" class="search-confirm">搜索</a><a href="javascript:;" onclick="window.history.go(-1)" class="search-cancel">取消</a>
+        <ul class="search-tips-list clearfix" id="searchTipsList"></ul>
+    </header>
+    <section class="main search-recom">
+        <!-- <h3 class="search-tit">历史搜索</h3>
+        <div class="search-hot clearfix" id="searchHistory"></div> -->
+        <h3 class="search-tit">搜索发现</h3>
+        <div class="search-hot clearfix" id="searchHot">
+            <!-- get ajax -->
+        </div>
+        <!-- 注释历史搜索
+        <h3 class="search-tit">历史搜索</h3>
+        <div class="search-hot clearfix" id="searchHistory"></div>
+        -->
+    </section>
+    <section class="main search-result">
+        <ul class="class-sort-bar" id="sortTabBar">
+            <li><em data-type="1">品牌</em></li><li><em data-type="2">销量</em></li><li><em data-type="3">价格</em></li><li><em data-type="4">筛选</em></li>
+        </ul>
+        <div class="class-pop-main clearfix">
+            <div class="class-pop-content"></div>
+            <div class="class-pop-content"></div>
+            <div class="class-pop-content"></div>
+            <div class="ssort-footer clearfix"><a href="javascript:;" class="ssort-reset">重置</a><a href="javascript:;" class="ssort-confirm">确认</a></div>
+        </div>
+        <ul class="product-list" id="searchList">
+            <!-- get ajax -->
+        </ul>
+        <div class="loading" id="loadStart">点击加载更多</div>
+    </section>
+    <!-- script -->
+    <div class="screen-wraps clearfix">
+        <div class="screen-header"><i></i><strong>筛选</strong></div>
+        <div class="screen-main clearfix">
+            <h3>价格区间</h3>
+            <p class="clearfix"><span><input class="ssortsa-inpt" type="number" maxlength="6" minlength="1" value="" placeholder="最低价"></span><span>——</span><span><input class="ssortsa-inpt" type="number" maxlength="6" minlength="1" value="" placeholder="最高价"></span></p>
+            <h3>商品类型</h3>
+            <p class="clearfix" id="loadSproList">
+                <em class="curs" data-type="0">全部商品</em><em data-type="1">自营</em><em data-type="2">非自营</em>
+            </p>
+            <h3 class="last">分类<i></i></h3>
+            <p class="last clearfix" id="loadSclassList">
+                <!-- ajax load -->
+            </p>
+        </div>
+        <div class="screen-footer"><a href="javascript:;" id="sFooterBtna">重置</a><a href="javascript:;" id="sFooterBtnb">确定</a></div>
+    </div>
+<script type="text/javascript" src="static/js/aspen.lib.min.js?v=9324"></script>
+<script type="text/javascript" src="static/js/search.js?v=444"></script>
+</body>
+</html>
